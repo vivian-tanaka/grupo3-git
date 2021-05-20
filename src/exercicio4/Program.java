@@ -16,6 +16,8 @@ public class Program {
                 System.out.println(i);
             }
         }
+
+        scanner.close();
     }
 
     private static boolean isNumeroPrimo(int numero) {
