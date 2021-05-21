@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9252f126-4daf-41f5-90cb-5dc10e967f2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aula4/exercicio1/entities/Disciplina.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula4/exercicio1/entities/Estudante.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula4/exercicio1/entities/Turma.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula4/exercicio1/main/Program.java" afterDir="false" />
+    <list default="true" id="9252f126-4daf-41f5-90cb-5dc10e967f2a" name="Default Changelist" comment="Exercicio 1 Escola">
+      <change afterPath="$PROJECT_DIR$/src/aula4/exercicio2/exercicio3/entities/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,6 +107,14 @@
       <option name="presentableId" value="Default" />
       <updated>1621521099138</updated>
     </task>
+    <task id="LOCAL-00001" summary="Exercicio 1 Escola">
+      <created>1621609510059</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1621609510059</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,5 +131,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Exercicio 1 Escola" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exercicio 1 Escola" />
   </component>
 </project>
