@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9252f126-4daf-41f5-90cb-5dc10e967f2a" name="Default Changelist" comment="Exercicio 1 Escola">
-      <change afterPath="$PROJECT_DIR$/src/aula4/exercicio2/exercicio3/entities/Book.java" afterDir="false" />
+    <list default="true" id="9252f126-4daf-41f5-90cb-5dc10e967f2a" name="Default Changelist" comment="Ex 3 small fix">
+      <change afterPath="$PROJECT_DIR$/src/aula4/exercicio3/ex2/GeometricFigure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula4/exercicio3/ex2/Program.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula4/exercicio3/ex2/figures/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula4/exercicio3/ex2/figures/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula4/exercicio3/ex2/figures/Triangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula4/exercicio3/ex2/utils/AreaMedia.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,8 +43,11 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="aula4.exercicio1.entities" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="aula4.exercicio3.ex2.figures" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Program (1)">
+  <component name="RunManager" selected="Application.Program (2)">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -77,6 +85,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Program (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aula4.exercicio3.ex2.Program" />
+      <module name="grupo3-git" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="aula4.exercicio3.ex2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="exercicio1.Program" />
       <module name="grupo3-git" />
@@ -92,6 +113,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Program (2)" />
         <item itemvalue="Application.Program (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Program" />
@@ -114,7 +136,21 @@
       <option name="project" value="LOCAL" />
       <updated>1621609510059</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Exercicio 3 Classe Book">
+      <created>1621612074237</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1621612074237</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Ex 3 small fix">
+      <created>1621612276412</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1621612276412</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +170,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Exercicio 1 Escola" />
-    <option name="LAST_COMMIT_MESSAGE" value="Exercicio 1 Escola" />
+    <MESSAGE value="Exercicio 3 Classe Book" />
+    <MESSAGE value="Ex 3 small fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ex 3 small fix" />
   </component>
 </project>
