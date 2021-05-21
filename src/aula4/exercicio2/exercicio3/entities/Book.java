@@ -50,7 +50,7 @@ public class Book {
 
     public String borrowBook(){
         if(amountInLibrary > 0){
-            setAmountInLibrary(amountInLibrary-1);
+            amountInLibrary--;
             return "Book borrowed";
         }
         return "No book available";
