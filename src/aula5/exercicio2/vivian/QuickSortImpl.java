@@ -8,6 +8,8 @@ public class QuickSortImpl<T> implements Sorter<T>{
     @Override
     public void sort(T arr[], Comparator<T> c) {
         Timer timer = new Timer();
+        System.out.println("-----------------------------------------------------------------");
+        System.out.println("QuickSort: ");
 
         timer.start();
         quickSort(arr, c, 0, arr.length - 1);
