@@ -1,30 +1,31 @@
 package aula5.exercicio2.vivian;
 
+import java.util.Arrays;
 import java.util.Comparator;
 
-public class QuickSortImpl implements Sorter<T>{
-
+public class QuickSortImpl<T> implements Sorter<T>{
 
     @Override
-    public void sort(T[] arr, Comparator<T> c) {
+    public void sort(T arr[], Comparator<T> c) {
         Timer timer = new Timer();
 
         timer.start();
-        quickSort(arr, 0, arr.length);
+        quickSort(arr, c, 0, arr.length - 1);
         timer.stop();
 
         System.out.println(timer.toString());;
+        Arrays.asList(arr).stream().forEach(System.out::println);
     }
 
-    private static void quickSort(T[] vetor, int inicio, int fim) {
+    private void quickSort(T[] vetor, Comparator<T> c, int inicio, int fim) {
         if (inicio < fim) {
-            int posicaoPivo = separar(vetor, inicio, fim);
-            quickSort(vetor, inicio, posicaoPivo - 1);
-            quickSort(vetor, posicaoPivo + 1, fim);
+            int posicaoPivo = separar(vetor, c, inicio, fim);
+            quickSort(vetor, c, inicio, posicaoPivo - 1);
+            quickSort(vetor, c, posicaoPivo + 1, fim);
         }
     }
 
-    private static int separar(T[] vetor, int inicio, int fim) {
+    private int separar(T[] vetor, Comparator<T> c, int inicio, int fim) {
         T pivo = vetor[inicio];
         int i = inicio + 1, f = fim;
         while (i <= f) {

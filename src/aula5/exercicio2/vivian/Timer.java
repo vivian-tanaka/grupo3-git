@@ -22,7 +22,9 @@ public class Timer {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder
                 .append("Duração: ")
-                .append(stopTime - startTime);
+                .append(stopTime - startTime)
+        .append("\nStart: "+startTime)
+        .append("\nStop: "+stopTime);
 
         return stringBuilder.toString();
     }
