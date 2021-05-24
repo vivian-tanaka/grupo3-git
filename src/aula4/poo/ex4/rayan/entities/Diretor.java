@@ -6,6 +6,12 @@ public class Diretor extends FuncionarioPF implements PagadorSalario {
 
     private double participacaoLucros;
 
+    public Diretor(double salario, String cpf, String nome) {
+        super.setSalario(salario);
+        super.setCpf(cpf);
+        super.setNome(nome);
+    }
+
     public double getParticipacaoLucros() {
         return participacaoLucros;
     }

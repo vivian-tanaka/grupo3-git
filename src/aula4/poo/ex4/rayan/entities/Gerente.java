@@ -6,12 +6,18 @@ public class Gerente extends FuncionarioPF implements PagadorSalario {
 
     private double bonusMetaBatida;
 
+    public Gerente(double salario, String cpf, String nome) {
+        super.setSalario(salario);
+        super.setCpf(cpf);
+        super.setNome(nome);
+    }
+
     public double getBonusMetaBatida() {
         return bonusMetaBatida;
     }
 
     public void setBonusMetaBatida(int qtdMetaBatida) {
-        this.bonusMetaBatida = getSalario() * (1 + (qtdMetaBatida * 0.125));
+        this.bonusMetaBatida = getSalario() * qtdMetaBatida * 0.125;
     }
 
     @Override

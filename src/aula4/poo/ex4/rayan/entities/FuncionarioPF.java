@@ -1,6 +1,6 @@
 package aula4.poo.ex4.rayan.entities;
 
-public class FuncionarioPF extends Pessoa {
+public abstract class FuncionarioPF extends Pessoa {
 
     private double salario;
 

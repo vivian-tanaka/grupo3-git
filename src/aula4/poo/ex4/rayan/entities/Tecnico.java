@@ -6,12 +6,18 @@ public class Tecnico extends FuncionarioPF implements PagadorSalario {
 
     private double bonusMetaBatida;
 
+    public Tecnico(double salario, String cpf, String nome) {
+        super.setSalario(salario);
+        super.setCpf(cpf);
+        super.setNome(nome);
+    }
+
     public double getBonusMetaBatida() {
         return bonusMetaBatida;
     }
 
     public void setBonusMetaBatida(int qtdMetaBatida) {
-        this.bonusMetaBatida = getSalario() * (1 + (qtdMetaBatida * 0.05));
+        this.bonusMetaBatida = qtdMetaBatida * 0.05;
     }
 
     @Override
