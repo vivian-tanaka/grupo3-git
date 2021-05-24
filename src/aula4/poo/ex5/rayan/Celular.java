@@ -1,7 +1,7 @@
 package aula4.poo.ex5.rayan;
 
 public class Celular implements Precedente<Celular>{
-    private long number;
+    private Long number;
     private String holder;
 
     public Celular(Long number, String holder) {
@@ -27,11 +27,19 @@ public class Celular implements Precedente<Celular>{
 
     @Override
     public int precedeA(Celular celular) {
-        return 0;
+        return this.number.compareTo(celular.getNumber());
     }
 
     @Override
     public Celular getObject() {
         return this;
+    }
+
+    @Override
+    public String toString() {
+        return "Celular{" +
+                "number=" + number +
+                ", holder='" + holder + '\'' +
+                '}';
     }
 }
