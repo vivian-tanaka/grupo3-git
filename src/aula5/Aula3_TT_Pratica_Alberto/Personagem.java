@@ -7,7 +7,7 @@ public class Personagem {
     private Integer nivel;
     private Classe classe;
     private Integer vida;
-    private Arma arma;
+    private Aula3_TT_Pratica_Alberto.Arma arma;
 
     public Personagem(String nome, Integer nivel, Integer vida, Classe classe, Arma arma) {
         this.nome = nome;
