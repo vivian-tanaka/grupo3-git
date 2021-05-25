@@ -1,0 +1,2 @@
+tentar rodar a corrida, tempo asté ganhar, voltas, simular chance de dano por volta/tempo
+no reparo aplicar tempo para reparo, distancia efetiva
