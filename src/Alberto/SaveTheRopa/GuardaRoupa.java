@@ -1,4 +1,4 @@
-package Aula6.Alberto.SaveTheRopa;
+package Alberto.SaveTheRopa;
 
 import java.util.HashMap;
 import java.util.List;

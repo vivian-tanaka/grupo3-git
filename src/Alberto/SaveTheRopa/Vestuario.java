@@ -1,4 +1,4 @@
-package Aula6.Alberto.SaveTheRopa;
+package Alberto.SaveTheRopa;
 
 public class Vestuario {
     private String marca;

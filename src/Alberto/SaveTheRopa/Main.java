@@ -1,4 +1,4 @@
-package Aula6.Alberto.SaveTheRopa;
+package Alberto.SaveTheRopa;
 
 import java.util.ArrayList;
 import java.util.List;
