@@ -1,4 +1,4 @@
-package Alberto.Dakar.entities;
+package aula06.Dakar.entities;
 
 public class Socorrista {
 

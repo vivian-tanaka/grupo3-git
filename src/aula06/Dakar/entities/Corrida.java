@@ -1,4 +1,4 @@
-package Alberto.Dakar.entities;
+package aula06.Dakar.entities;
 
 import java.util.*;
 import java.util.stream.Collectors;

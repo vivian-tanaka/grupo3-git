@@ -1,8 +1,7 @@
-package Alberto.Dakar.main;
+package aula06.Dakar.main;
 
-import Alberto.Dakar.entities.Corrida;
-import Alberto.Dakar.entities.TipoDeVeiculo;
-import Alberto.Dakar.entities.Veiculo;
+import aula06.Dakar.entities.Corrida;
+import aula06.Dakar.entities.TipoDeVeiculo;
 
 public class Program {
 

@@ -1,6 +1,6 @@
-package Alberto.LaChiqui.main;
+package aula06.LaChiqui.main;
 
-import Alberto.LaChiqui.entities.*;
+import aula06.LaChiqui.entities.*;
 
 public class Program {
 

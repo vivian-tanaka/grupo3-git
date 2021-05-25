@@ -1,4 +1,4 @@
-package Alberto.LaChiqui.entities;
+package aula06.LaChiqui.entities;
 
 public class FogosDeArtificio {
 
