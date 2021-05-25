@@ -8,8 +8,7 @@ public class Veiculo {
     private String placa;
     private TipoDeVeiculo tipoDeVeiculo;
     private double velocidadeCorrente;
-
-
+    private boolean terminouACorrida;
 
     public Veiculo(double velocidade, double aceleracao, double anguloDeGiro, String placa, TipoDeVeiculo tipoDeVeiculo, double velocidadeCorrente) {
         this.velocidade = velocidade;
@@ -66,5 +65,13 @@ public class Veiculo {
 
     public void setVelocidadeCorrente(double velocidadeCorrente) {
         this.velocidadeCorrente = velocidadeCorrente;
+    }
+
+    public boolean isTerminouACorrida() {
+        return terminouACorrida;
+    }
+
+    public void setTerminouACorrida(boolean terminouACorrida) {
+        this.terminouACorrida = terminouACorrida;
     }
 }

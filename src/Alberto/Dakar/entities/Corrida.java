@@ -11,7 +11,6 @@ public class Corrida {
     private ArrayList<Veiculo> listaVeiculos;
     private HashMap<Integer, Double> podium = new HashMap<>();
     private ArrayList<Veiculo> podiumFinal = new ArrayList<>();
-    private int quantidadeDeHorasPassadas = 1;
 
     public Corrida(double distanciaEmKM, double premioEmDolares, String nome, int quantidadeDeVeiculosPermitidos) {
         this.distanciaEmKM = distanciaEmKM;
@@ -40,7 +39,10 @@ public class Corrida {
                     Socorrista socorrista = new Socorrista();
                     socorrista.socorrer(v);
                 } else {
-                    double velocidadeCorrente = v.getAceleracao() * this.quantidadeDeHorasPassadas >= v.getVelocidade() ? v.getVelocidade() : v.getAceleracao() * this.quantidadeDeHorasPassadas;
+//                    double velocidadeCorrente = v.getAceleracao() * this.quantidadeDeHorasPassadas >= v.getVelocidade() ? v.getVelocidade() : v.getAceleracao() * this.quantidadeDeHorasPassadas;
+
+                    double velocidadeCorrente = calculaVelocidadeCorrente(v);
+                    v.setVelocidadeCorrente(velocidadeCorrente);
 
                     double distanciaAtual = podium.get(i);
                     double novaDistancia = velocidadeCorrente + distanciaAtual;
@@ -49,17 +51,23 @@ public class Corrida {
 //                    podiumFinal.add(v);
 //                    podium.remove(i);
 //                    removerVeiculo(v);
+                        if(!v.isTerminouACorrida()){
+                            v.setTerminouACorrida(true);
+                            podiumFinal.add(v);
+                        }
                         podium.put(i, distanciaEmKM);
                     } else {
                         podium.put(i, novaDistancia);
                     }
                 }
-
-
             }
 
-            this.quantidadeDeHorasPassadas++;
             ordernaPodium();
+        }
+
+        System.out.println("Podium final:");
+        for (int i = 0; i < podiumFinal.size(); i++) {
+            System.out.println((i+1) + " - " + podiumFinal.get(i).getPlaca());
         }
     }
 
@@ -75,9 +83,6 @@ public class Corrida {
 
         podium = novoPodium;
 
-//        for(Map.Entry<Integer, Double> me : this.podium.entrySet()){
-//            System.out.println((me.getKey()+1) + " na distancia " + podium.get(me.getKey()));
-//        }
         System.out.println();
     }
 
@@ -87,7 +92,6 @@ public class Corrida {
                 return false;
             }
         }
-
         return true;
     }
 
@@ -96,6 +100,10 @@ public class Corrida {
         return rand <= v.getTipoDeVeiculo().getChanceDeQuebrar();
     }
 
+    private double calculaVelocidadeCorrente(Veiculo v) {
+        return ((v.getAceleracao() + v.getVelocidade()) * 100) /
+                (v.getAnguloDeGiro() * (v.getTipoDeVeiculo().getPeso() - (v.getTipoDeVeiculo().getQuantidadeDeRodas() * 100)));
+    }
 
     public void registrarVeiculo(double velocidade, double aceleracao, double anguloDeGiro, String placa, TipoDeVeiculo tipoDeVeiculo, double velocidadeCorrente) {
         if (this.quantidadeDeVeiculosPermitidos > this.listaVeiculos.size()) {
